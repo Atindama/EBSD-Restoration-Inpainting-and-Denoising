@@ -23,5 +23,6 @@ https://drive.google.com/drive/folders/1LTa24fsjtEZR6NbysCDJbJiRkHwFIjVU?usp=sha
 ![ipf_damaged](https://github.com/Atindama/EBSD-Restoration-Inpainting-and-Denoising/assets/121004801/2a13a69b-7ca1-44c6-8938-81d1a400c3f1)
 ![ipf_hybrid](https://github.com/Atindama/EBSD-Restoration-Inpainting-and-Denoising/assets/121004801/6f03598d-0284-46f8-8f76-7397c4e28bd1)
 ![denoised_ipf_hybrid_oneblock](https://github.com/Atindama/EBSD-Restoration-Inpainting-and-Denoising/assets/121004801/e16a3c27-75aa-4f4a-a5f4-e3d400e0b6e6)
+
 Clean       Noisy      Missing      Inpainted       Denoised
 
