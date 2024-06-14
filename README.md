@@ -12,4 +12,7 @@ sbatch create_examples.sh ../synthetic_EBSD_data/val im_oneblock 20 ./epoch_may3
 
 sbatch multi_test.sh ./epoch_996.pt 3 cuda:0 ./errors_CriminisiML/
 
-Download the pretrained models here https://drive.google.com/drive/folders/1alwtFbyjpd8Y5dfscb2mmUX4Hb38WYux?usp=sharing
+Download the pretrained models here https://drive.google.com/drive/folders/1alwtFbyjpd8Y5dfscb2mmUX4Hb38WYux?usp=sharing and keep in hybrid_EBSD_restoration frolder when running.
+
+For denoising, download the ipf_Folder, and put into the pyEBSD folder when running the demo scripts
+https://drive.google.com/drive/folders/1LTa24fsjtEZR6NbysCDJbJiRkHwFIjVU?usp=sharing
