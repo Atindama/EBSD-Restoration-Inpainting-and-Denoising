@@ -139,12 +139,23 @@ if __name__ == '__main__':
     source_ctfs = list(map(os.path.abspath, source_ctfs))[:args.n_examples]
     
     # clean_ctfs = ['/mnt/home/atindaea/synthetic_EBSD_data/val/8370_clean.ctf']
-    clean_ctfs = ['../synthetic_EBSD_data/real/3_clean.ctf']
+    # clean_ctfs = ['../synthetic_EBSD_data/real/3_clean.ctf']
     source_ctfs = ['../synthetic_EBSD_data/real/3_clean.ctf']
 
-
-    print(source_ctfs)
-    print(clean_ctfs)
+    # for i, clean_ctf in enumerate(clean_ctfs):
+    #     original_clean = normalize(load_ctf_to_tensor(clean_ctf)).to(args.device)
+    #     image = original_clean
+    #     if isinstance(image, torch.Tensor):
+    #         image = to_uint8_image(image)
+    #     else:
+    #         image = (image * 255).astype(np.uint8)
+    #     cropped_image = image[:128, 128:, :]
+        
+    #     single_image_name = 'clean.png'
+    #     single_image_path = os.path.join(args.output_dir, single_image_name)
+    #     np.save(single_image_path[:-4], cropped_image/255)
+    #     skimage.io.imsave(single_image_path, cropped_image)
+    
 
      # Define the model ===================================================================
     print("Loading the Model...")
@@ -159,20 +170,8 @@ if __name__ == '__main__':
     #========================================================================================
 
     print("Model loaded...")
-    for i, clean_ctf in enumerate(clean_ctfs):
-        original_clean = normalize(load_ctf_to_tensor(clean_ctf)).to(args.device)
-        image = original_clean
-        if isinstance(image, torch.Tensor):
-            image = to_uint8_image(image)
-        else:
-            image = (image * 255).astype(np.uint8)
-        cropped_image = image[:128, 128:, :]
-        
-        single_image_name = 'clean.png'
-        single_image_path = os.path.join(args.output_dir, single_image_name)
-        np.save(single_image_path[:-4], cropped_image/255)
-        skimage.io.imsave(single_image_path, cropped_image)
-
+    
+    
     for i, source_ctf in enumerate(source_ctfs):
         images = []
         original = normalize(load_ctf_to_tensor(source_ctf)).to(args.device)
