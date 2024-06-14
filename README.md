@@ -26,3 +26,6 @@ https://drive.google.com/drive/folders/1LTa24fsjtEZR6NbysCDJbJiRkHwFIjVU?usp=sha
 
 Clean map, Noisy map, Map with Missng data, Inpainted map, and Denoised map
 
+How to cite this code:
+
+https://link.springer.com/article/10.1007/s40192-023-00304-8#citeas
