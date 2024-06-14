@@ -1,0 +1,6 @@
+
+
+python create_examples.py /mnt/home/atindaea/EBSD-hybrid-inpainting-develop/ctf_files new_output  20  ~/EBSD-hybrid-inpainting-develop/epoch_486.pt cuda:0 --n-examples 1 --patch-size 3 --missing-region-location 'center'
+python create_examples_paper.py ../synthetic_EBSD_data/val trial1 20 ./epoch_486.pt cuda:0 --n-examples 1 --patch-size 3 --missing-region-location 'center'
+
+sbatch multi_test.sh ./epoch_486.pt 20 cuda:0 ./new_output/
